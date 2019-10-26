@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+        title "Cookie Data"
+        link(rel="stylesheet" href="/css/styles.css")
+        //script(src="/js/script.js")
+
+    body
+        h1 Cookie Data
+        block content
+            h2 User Name: #{cookieName}
+            h2 User Email: #{cookieEmail}
+    form(method="GET", action="/")
+            P
+                input(type="Submit",value='Return to Login Page')

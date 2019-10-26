@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title "Login Page"
+        link(rel="stylesheet" href="/css/styles.css")
+
+    body
+        h1 LOGIN
+        form(method="GET", action="/login")
+            input(type="hidden", name="_method", value="GET")
+            p Name:
+                input(type="text", name="name")
+            p Email:
+                input(type="text", name="email")
+            p
+                input(type="submit")
